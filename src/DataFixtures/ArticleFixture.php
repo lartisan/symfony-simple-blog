@@ -16,7 +16,7 @@ class ArticleFixture extends BaseFixture implements DependentFixtureInterface
                 ->setExcerpt($this->faker->paragraph(3))
                 ->setContent($this->faker->paragraph(6))
                 ->setAuthor(
-                    $this->getReference(sprintf('user.%d', $this->faker->numberBetween(0, 1)))
+                    $this->getReference(sprintf('User_%d', $this->faker->numberBetween(0, 1)))
                 )
             ;
         });

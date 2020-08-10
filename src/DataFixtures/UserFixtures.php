@@ -29,7 +29,7 @@ class UserFixtures extends Fixture
 
             $manager->flush();
 
-            $this->addReference('user.' . $i, $user);
+            $this->addReference('User_' . $i, $user);
         }
     }
 }
