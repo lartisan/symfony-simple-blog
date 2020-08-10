@@ -27,14 +27,14 @@
     </div>
 
     <!-- Nav Item - Articles -->
-    <li class="nav-item active">
+    <li {% if route_name matches '{^article}' %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
         <a class="nav-link" href="{{ url('article_index') }}">
             <i class="fas fa-fw fa-file"></i>
             <span>Articles</span></a>
     </li>
 
     <!-- Nav Item - Users -->
-    <li class="nav-item active">
+    <li {% if route_name matches '{^user}' %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
         <a class="nav-link" href="{{ url('user_index') }}">
             <i class="fas fa-fw fa-users"></i>
             <span>Users</span></a>

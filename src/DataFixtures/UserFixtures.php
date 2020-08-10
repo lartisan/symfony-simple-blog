@@ -16,17 +16,20 @@ class UserFixtures extends Fixture
             ["username" => "user", "email" => "user@example.com", "roles" => ["ROLE_USER"]],
         ];
 
-        foreach ($userData as $data) {
+        foreach ($userData as $i => $data) {
             $user = new User();
-            $user->setUsername($data["username"]);
-            $user->setEmail($data["email"]);
-            // $user->setPassword('$2y$13$V99J0qg18G3hN/yqbhCZOeFfcDKDRJ6740Nir/8LtDpzcT8lZCrRu');
-            $user->setPlainPassword('parola123');
-            $user->setRoles($data["roles"]);
-            $user->setEnabled(true);
+            $user->setUsername($data["username"])
+                ->setEmail($data["email"])
+                ->setPlainPassword('parola123')
+                ->setRoles($data["roles"])
+                ->setEnabled(true)
+            ;
+
             $manager->persist($user);
 
             $manager->flush();
+
+            $this->addReference('user.' . $i, $user);
         }
     }
 }

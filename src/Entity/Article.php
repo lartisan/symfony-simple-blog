@@ -107,9 +107,11 @@ class Article
     /**
      * @param mixed $excerpt
      */
-    public function setExcerpt($excerpt): void
+    public function setExcerpt($excerpt): self
     {
         $this->excerpt = $excerpt;
+
+        return $this;
     }
 
     /**
