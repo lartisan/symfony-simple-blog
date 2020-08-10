@@ -11,7 +11,7 @@ class UserFixtures extends Fixture
     public function load(ObjectManager $manager)
     {
         $userData = [
-            ["username" => "admin", "email" => "admin@example.com", "roles" => ["ROLE_SUPER_ADMIN"]],
+            ["username" => "admin", "email" => "admin@example.com", "roles" => ["ROLE_ADMIN", "ROLE_MODERATOR"]],
             ["username" => "moderator", "email" => "moderator@example.com", "roles" => ["ROLE_MODERATOR"]],
             ["username" => "user", "email" => "user@example.com", "roles" => ["ROLE_USER"]],
         ];

@@ -17,7 +17,7 @@ class CommentFixture extends BaseFixture implements DependentFixtureInterface
                     $this->getReference(sprintf('App\Entity\Article_%d', $this->faker->numberBetween(0,9)))
                 )
                 ->setUser(
-                    $this->getReference(sprintf('User_%d', $this->faker->numberBetween(0, 1)))
+                    $this->getReference(sprintf('User_%d', $this->faker->numberBetween(0, 2)))
                 )
             ;
         });
