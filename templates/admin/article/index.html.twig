@@ -11,7 +11,7 @@
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-                <a class="btn btn-primary float-right text-white">New Article</a>
+                <a href="{{ url('article_new') }}" class="btn btn-primary float-right text-white">New Article</a>
             </div>
 
             <div class="card-body">
@@ -34,10 +34,10 @@
                                         <td>{{ article.id }}</td>
                                         <td>{{ article.title }}</td>
                                         <td>{{ article.author.username }}</td>
-                                        <td>{{ article.publishedAt|date('d.m.y') }}</td>
+                                        <td>{{ article.createdAt|date('d-m-Y') }}</td>
                                         <td>
-                                            <button class="btn btn-primary">Edit</button>
-                                            <button class="btn btn-danger">Delete</button>
+                                            <a href="{{ path('article_edit', {'id': article.id}) }}" class="btn btn-primary">Edit</a>
+                                            {% include 'admin/article/_delete_form.html.twig' %}
                                         </td>
                                     </tr>
                                 {% endfor %}

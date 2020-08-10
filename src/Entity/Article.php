@@ -5,6 +5,7 @@ namespace App\Entity;
 use App\Repository\ArticleRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=ArticleRepository::class)
@@ -19,6 +20,7 @@ class Article
     private $id;
 
     /**
+     * @Assert\NotBlank
      * @ORM\Column(type="string", length=100)
      */
     private $title;
@@ -30,19 +32,16 @@ class Article
     private $slug;
 
     /**
+     * @Assert\NotBlank
      * @ORM\Column(type="text")
      */
     private $excerpt;
 
     /**
+     * @Assert\NotBlank
      * @ORM\Column(type="text")
      */
     private $content;
-
-    /**
-     * @ORM\Column(type="datetime", nullable=true)
-     */
-    private $publishedAt;
 
     /**
      * @ORM\ManyToOne(targetEntity=User::class, inversedBy="articles")
@@ -128,25 +127,6 @@ class Article
     public function setContent(string $content): self
     {
         $this->content = $content;
-
-        return $this;
-    }
-
-    /**
-     * @return \DateTimeInterface|null
-     */
-    public function getPublishedAt(): ?\DateTimeInterface
-    {
-        return $this->publishedAt;
-    }
-
-    /**
-     * @param \DateTimeInterface|null $publishedAt
-     * @return $this
-     */
-    public function setPublishedAt(?\DateTimeInterface $publishedAt): self
-    {
-        $this->publishedAt = $publishedAt;
 
         return $this;
     }
