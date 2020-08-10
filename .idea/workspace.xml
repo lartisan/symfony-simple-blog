@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3d297a44-c26b-48da-902c-9e51fd73ef57" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +41,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597049643561</updated>
-      <workItem from="1597049644659" duration="5301000" />
+      <workItem from="1597049644659" duration="7262000" />
     </task>
     <servers />
   </component>
@@ -46,6 +49,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1597057381351">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1597057381351" />
+    <state x="207" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597058253110">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="207" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1597058253110" />
     <state x="422" y="183" key="NewPhpClassDialog" timestamp="1597052582209">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -58,9 +69,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1597049674870" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1597055311037">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1597058407336">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1597055311037" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1597058407336" />
   </component>
 </project>
