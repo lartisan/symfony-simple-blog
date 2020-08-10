@@ -1,0 +1,57 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block admin_title %}Article index{% endblock %}
+
+{% block admin_content %}
+    <div class="container-fluid">
+
+        <!-- Page Heading -->
+        <h1 class="h3 mb-2 text-gray-800">Article List</h1>
+
+        <!-- DataTales Example -->
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <a class="btn btn-primary float-right text-white">New Article</a>
+            </div>
+
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped" width="100%" cellspacing="0">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>PublishedAt</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                            {% if articles %}
+                                {% for article in articles %}
+                                    <tr>
+                                        <td>{{ article.id }}</td>
+                                        <td>{{ article.title }}</td>
+                                        <td>{{ article.author.username }}</td>
+                                        <td>{{ article.publishedAt|date('d.m.y') }}</td>
+                                        <td>
+                                            <button class="btn btn-primary">Edit</button>
+                                            <button class="btn btn-danger">Delete</button>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            {% else %}
+                                <tr>
+                                    <td colspan="5" class="text-center">No articles yet!</td>
+                                </tr>
+                            {% endif %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}

@@ -14,6 +14,9 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectId" id="1ftuKBGaBeRvwpXjZfjQAiya6ZA" />
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
@@ -23,7 +26,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/admin" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -33,6 +36,15 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/admin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/admin" />
+      <recent name="$PROJECT_DIR$/src/Controller/Admin" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -41,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597049643561</updated>
-      <workItem from="1597049644659" duration="7262000" />
+      <workItem from="1597049644659" duration="11584000" />
     </task>
     <servers />
   </component>
@@ -53,10 +65,26 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1597057381351" />
-    <state x="207" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597058253110">
+    <state x="207" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597058715887">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="207" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1597058253110" />
+    <state x="207" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1597058715887" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1597058618522">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597058618522" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1597058618521">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1597058618521" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1597058618519">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1597058618519" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1597058618521">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1597058618521" />
     <state x="422" y="183" key="NewPhpClassDialog" timestamp="1597052582209">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
