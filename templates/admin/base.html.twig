@@ -18,7 +18,7 @@
 
         <!-- Custom styles for this template -->
         {% block admin_stylesheets %}
-            {{ encore_entry_link_tags('app') }}
+            {{ encore_entry_link_tags('admin') }}
         {% endblock %}
 
     </head>
@@ -68,7 +68,7 @@
         {% include 'admin/inc/logout-modal.html.twig' %}
 
         {% block admin_javascripts %}
-            {{ encore_entry_script_tags('app') }}
+            {{ encore_entry_script_tags('admin') }}
         {% endblock %}
 
     </body>

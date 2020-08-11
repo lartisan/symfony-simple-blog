@@ -1,0 +1,65 @@
+{% extends 'front/base.html.twig' %}
+
+{% block front_title %}{{ article.title }}{% endblock %}
+
+{% block front_content %}
+    <!-- Post Content Column -->
+    <div class="col-lg-8">
+
+        <!-- Title -->
+        <h1 class="mt-4">{{ article.title }}</h1>
+
+        <!-- Author -->
+        <p class="lead">
+            by
+            <a href="#">{{ article.author.username }}</a>
+        </p>
+
+        <hr>
+
+        <!-- Date/Time -->
+        <p>Posted on {{ article.createdAt|date('F j, Y') }} at {{ article.createdAt|date('H:m A') }}</p>
+
+        <hr>
+
+        <!-- Preview Image -->
+        <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
+
+        <hr>
+
+        <!-- Post Content -->
+        <p class="lead">{{ article.content }}</p>
+
+        <hr>
+
+        <!-- Comments Form -->
+        <div class="card my-4">
+            <h5 class="card-header">Leave a Comment:</h5>
+
+            <div class="card-body">
+                <form id="front_comments_form" action="{{ path('front_article_comment', { 'id': article.id }) }}">
+                    <div class="form-group">
+                        <textarea name="body" class="form-control" rows="3"></textarea>
+                    </div>
+                    <button {% if not app.user %} disabled {% endif %} type="submit" class="btn btn-primary">Submit</button>
+                    {% if not app.user %}
+                        <small class="float-right text-right">You need to be logged in to post a comment.</small>
+                    {% endif %}
+                </form>
+            </div>
+        </div>
+
+        <!-- Article Comments -->
+        {% for comment in article.comments|sort((a,b) => b.createdAt <=> a.createdAt) %}
+            <div class="media mb-4">
+                <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+                <div class="media-body">
+                    <h5 class="mt-0 d-inline">{{ comment.user.username }}</h5>
+                    <small>@{{ comment.createdAt|date('F j, Y H:m A') }}</small>
+                    <p>{{ comment.body }}</p>
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+{% endblock %}
