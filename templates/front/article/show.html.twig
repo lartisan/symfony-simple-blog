@@ -4,7 +4,7 @@
 
 {% block front_content %}
     <!-- Post Content Column -->
-    <div class="col-lg-8">
+    <div class="col-lg-8 offset-2">
 
         <!-- Title -->
         <h1 class="mt-4">{{ article.title }}</h1>
@@ -37,12 +37,12 @@
             <h5 class="card-header">Leave a Comment:</h5>
 
             <div class="card-body">
-                <form id="front_comments_form" action="{{ path('front_article_comment', { 'id': article.id }) }}">
+                 <form id="front_comments_form" action="{{ path('front_article_comment', { 'id': article.id }) }}">
                     <div class="form-group">
                         <textarea name="body" class="form-control" rows="3"></textarea>
                     </div>
-                    <button {% if not app.user %} disabled {% endif %} type="submit" class="btn btn-primary">Submit</button>
-                    {% if not app.user %}
+                    <button {% if not is_granted('ROLE_USER') %} disabled {% endif %} type="submit" class="btn btn-primary">Submit</button>
+                    {% if not is_granted('ROLE_USER') %}
                         <small class="float-right text-right">You need to be logged in to post a comment.</small>
                     {% endif %}
                 </form>

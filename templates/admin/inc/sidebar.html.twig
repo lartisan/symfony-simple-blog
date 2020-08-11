@@ -14,7 +14,7 @@
     </div>
 
     <!-- Nav Item - Articles -->
-    <li {% if route_name matches '{^article}' %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
+    <li class="nav-item {{ route_name matches '{^article}' ? 'active' : '' }}">
         <a class="nav-link" href="{{ url('article_index') }}">
             <i class="fas fa-fw fa-file"></i>
             <span>Articles</span></a>

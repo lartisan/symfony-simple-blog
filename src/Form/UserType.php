@@ -28,13 +28,14 @@ class UserType extends AbstractType
             ])
             ->add('password', PasswordType::class, ['required' => false, 'attr' => ['class' => 'form-control']])
             ->add('roles', ChoiceType::class, [
-                'attr' => ['class' => 'form-control'],
-                'multiple' => true,
+                'attr' => ['class' => 'form-check-label'],
                 'choices' => [
-                    'ROLE_USER' => 'ROLE_USER',
-                    'ROLE_MODERATOR' => 'ROLE_MODERATOR',
-                    'ROLE_ADMIN' => 'ROLE_ADMIN',
-                ]
+                    'User' => 'ROLE_USER',
+                    'Moderator' => 'ROLE_MODERATOR',
+                    'Admin' => 'ROLE_ADMIN',
+                ],
+                'multiple' => true,
+                'expanded' => true,
             ])
         ;
     }

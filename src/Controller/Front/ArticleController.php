@@ -15,6 +15,8 @@ class ArticleController extends AbstractController
 {
     /**
      * @Route("/", name="front_article_index", methods={"GET"})
+     * @param ArticleRepository $articleRepository
+     * @return Response
      */
     public function index(ArticleRepository $articleRepository): Response
     {
@@ -25,6 +27,8 @@ class ArticleController extends AbstractController
 
     /**
      * @Route("/article/{slug}", name="front_article_show", methods={"GET"})
+     * @param Article $article
+     * @return Response
      */
     public function show(Article $article): Response
     {

@@ -1,0 +1,14 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<h1 class="my-4">Edit Profile for '{{ app.user.username }}'</h1>
+
+<div class="card mb-4">
+    <div class="card-body">
+
+        {{ form_start(form, { 'action': path('fos_user_profile_edit'), 'attr': { 'class': 'fos_user_profile_edit' } }) }}
+            {{ form_widget(form) }}
+
+            <input class="btn btn-primary" type="submit" value="{{ 'profile.edit.submit'|trans }}" />
+        {{ form_end(form) }}
+    </div>
+</div>

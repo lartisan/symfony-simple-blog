@@ -14,7 +14,7 @@ class CommentType extends AbstractType
     {
         $builder
             ->add('body', TextareaType::class, ['attr' => ['class' => 'form-control']])
-            ->add('article')
+            ->add('article', null, ['attr' => ['hidden']])
             ->add('user')
         ;
     }

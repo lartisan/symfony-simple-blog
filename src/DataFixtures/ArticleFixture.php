@@ -6,8 +6,15 @@ use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Persistence\ObjectManager;
 use App\Entity\Article;
 
+/**
+ * Class ArticleFixture
+ * @package App\DataFixtures
+ */
 class ArticleFixture extends BaseFixture implements DependentFixtureInterface
 {
+    /**
+     * @param ObjectManager $manager
+     */
     public function loadData(ObjectManager $manager)
     {
         $this->createMany(Article::class, 10, function(Article $article) {
@@ -24,7 +31,7 @@ class ArticleFixture extends BaseFixture implements DependentFixtureInterface
         $manager->flush();
     }
 
-    public function getDependencies()
+    public function getDependencies(): array
     {
         return [
             UserFixtures::class,

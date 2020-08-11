@@ -33,7 +33,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/bundles/TwigBundle/Exception" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/css" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -45,16 +45,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/css" />
       <recent name="$PROJECT_DIR$/templates/bundles/TwigBundle/Exception" />
       <recent name="$PROJECT_DIR$/templates/bundles/TwigExtraBundle/Exception" />
       <recent name="$PROJECT_DIR$/templates/admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/bundles/TwigBundle/views" />
+      <recent name="$PROJECT_DIR$/templates/bundles/FOSUserBundle" />
       <recent name="$PROJECT_DIR$/src/Controller/Front" />
       <recent name="$PROJECT_DIR$/templates/front" />
       <recent name="$PROJECT_DIR$/templates/bundles/TwigBundle" />
-      <recent name="$PROJECT_DIR$/templates/bundles/TwigBundle/views" />
-      <recent name="$PROJECT_DIR$/templates/admin" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -65,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597049643561</updated>
-      <workItem from="1597049644659" duration="43359000" />
+      <workItem from="1597049644659" duration="58148000" />
     </task>
     <servers />
   </component>
@@ -73,14 +74,18 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1597057381351">
+    <state x="756" y="208" key="#com.intellij.ide.util.MemberChooser" timestamp="1597165379098">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1597057381351" />
+    <state x="756" y="208" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1597165379098" />
     <state x="207" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597058715887">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="207" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1597058715887" />
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597155356691">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1597155356691" />
     <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597141970265">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -121,9 +126,9 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="385" y="210" key="run.anything.popup/0.23.1440.877@0.23.1440.877" timestamp="1597137624924" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1597139315718">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1597168798886">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1597139315718" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1597168798886" />
   </component>
 </project>

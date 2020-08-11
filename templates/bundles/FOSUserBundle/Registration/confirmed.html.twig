@@ -1,0 +1,15 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% extends 'front/base.html.twig' %}
+
+{% block front_content %}
+<div class="col-md-8 offset-2">
+
+    <h3 class="text-center my-4">{{ 'registration.confirmed'|trans({'%username%': user.username}) }}</h3>
+
+    <p class="text-center">
+        Go see <a href="{{ path('front_article_index') }}">all articles</a>
+        or <a href="{{ path('fos_user_profile_edit') }}">edit your profile</a>.
+    </p>
+</div>
+{% endblock %}

@@ -29,7 +29,9 @@
         <div id="wrapper">
 
             <!-- Sidebar -->
-            {% include 'admin/inc/sidebar.html.twig' %}
+            {% if is_granted('ROLE_MODERATOR') or is_granted('ROLE_ADMIN') %}
+                {% include 'admin/inc/sidebar.html.twig' %}
+            {% endif %}
             <!-- End of Sidebar -->
 
             <!-- Content Wrapper -->
@@ -41,6 +43,10 @@
                     <!-- Topbar -->
                     {% include 'admin/inc/topbar.html.twig' %}
                     <!-- End of Topbar -->
+
+                    {% for message in app.flashes('success') %}
+                        <div class="alert alert-success">{{ message }}</div>
+                    {% endfor %}
 
                     <!-- Begin Page Content -->
                     {% block admin_content %}{% endblock %}
