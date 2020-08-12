@@ -21,6 +21,16 @@ class User extends BaseUser
     protected $id;
 
     /**
+     * @ORM\Column(type="string", length=60, nullable=true)
+     */
+    private $firstName;
+
+    /**
+     * @ORM\Column(type="string", length=60, nullable=true)
+     */
+    private $lastName;
+
+    /**
      * @ORM\OneToMany(targetEntity=Article::class, mappedBy="author")
      */
     private $articles;
@@ -98,5 +108,34 @@ class User extends BaseUser
         }
 
         return $this;
+    }
+
+    public function getFirstName(): ?string
+    {
+        return $this->firstName;
+    }
+
+    public function setFirstName(?string $firstName): self
+    {
+        $this->firstName = $firstName;
+
+        return $this;
+    }
+
+    public function getLastName(): ?string
+    {
+        return $this->lastName;
+    }
+
+    public function setLastName(?string $lastName): self
+    {
+        $this->lastName = $lastName;
+
+        return $this;
+    }
+
+    public function getFullName(): ?string
+    {
+        return sprintf("%s %s", $this->firstName, $this->lastName);
     }
 }

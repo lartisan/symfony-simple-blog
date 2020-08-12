@@ -17,7 +17,7 @@ class ArticleFixture extends BaseFixture implements DependentFixtureInterface
      */
     public function loadData(ObjectManager $manager)
     {
-        $this->createMany(Article::class, 10, function(Article $article) {
+        $this->createMany(Article::class, 5, function(Article $article) {
             $article
                 ->setTitle($this->faker->sentence(6))
                 ->setExcerpt($this->faker->paragraph(3))

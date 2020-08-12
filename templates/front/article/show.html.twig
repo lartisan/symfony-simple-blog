@@ -18,7 +18,7 @@
         <hr>
 
         <!-- Date/Time -->
-        <p>Posted on {{ article.createdAt|date('F j, Y') }} at {{ article.createdAt|date('H:m A') }}</p>
+        <p>Posted about {{ article.createdAt|ago }}</p>
 
         <hr>
 
@@ -55,7 +55,7 @@
                 <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
                 <div class="media-body">
                     <h5 class="mt-0 d-inline">{{ comment.user.username }}</h5>
-                    <small>@{{ comment.createdAt|date('F j, Y H:m A') }}</small>
+                    <small>about {{ comment.createdAt|ago }}</small>
                     <p>{{ comment.body }}</p>
                 </div>
             </div>

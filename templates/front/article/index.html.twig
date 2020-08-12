@@ -19,21 +19,11 @@
                     <a href="{{ path('front_article_show', {'slug': article.slug}) }}" class="btn btn-primary">Read More &rarr;</a>
                 </div>
                 <div class="card-footer text-muted">
-                    Posted on {{ article.createdAt|date('F j, Y H:m A') }} by
+                    Posted about {{ article.createdAt|ago }} by
                     <a href="#">{{ article.author.username }}</a>
                 </div>
             </div>
         {% endfor %}
-
-        <!-- Pagination -->
-{#        <ul class="pagination justify-content-center mb-4">#}
-{#            <li class="page-item">#}
-{#                <a class="page-link" href="#">&larr; Older</a>#}
-{#            </li>#}
-{#            <li class="page-item disabled">#}
-{#                <a class="page-link" href="#">Newer &rarr;</a>#}
-{#            </li>#}
-{#        </ul>#}
 
     </div>
 
