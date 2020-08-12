@@ -1,0 +1,14 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block admin_content %}
+<div class="container-fluid">
+    <div class="col-8 offset-2 text-center">
+        <h1>Page not found</h1>
+
+        <p>
+            The requested page couldn't be located. Checkout for any URL
+            misspelling or <a href="{{ path('front_article_index') }}">return to the homepage</a>.
+        </p>
+    </div>
+</div>
+{% endblock %}
